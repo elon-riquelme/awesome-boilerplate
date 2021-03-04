@@ -19,3 +19,14 @@ mkdir -p packages/validator && cd packages/validator
 # initialize library with scope name
 npm init --scope=awesome-boilerplate --yes
 ```
+
+## Add package as a dependency
+
+```bash
+# Add validator library as a dependency to frontend
+lerna add @awesome-boilerplate/validator --scope=@awesome-boilerplate/frontend
+```
+
+```javascript
+import { isNullOrWhitespace } from '@awesome-boilerplate/validator';
+```
